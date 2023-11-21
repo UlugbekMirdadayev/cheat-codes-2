@@ -1,0 +1,150 @@
+.scheme__row {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(../img/scheme-fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 515px;
+  padding-left: 152px;
+
+  @media (max-width: 1200px) {
+    padding-left: 35px;
+  }
+  @media (max-width: 600px) {
+    background-image: url(../img/scheme-fon-mob.png);
+    background-size: contain;
+    min-height: 807px;
+  }
+}
+
+.scheme__title {
+  margin-top: 75px;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #17f871;
+  @media (max-width: 800px) {
+    font-size: 32px;
+  }
+}
+.scheme__text {
+  margin-top: 16px;
+  max-width: 714px;
+  font-family: Anonymous Pro;
+  font-size: 32px;
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
+}
+
+.scheme__line {
+  margin-top: 37px;
+  display: flex;
+  align-items: stretch;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.scheme__line-item {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 600px) {
+    flex-direction: row;
+  }
+}
+
+.scheme__line-img {
+  padding: 30px 49px 32px 34px;
+  @media (max-width: 600px) {
+    padding: 30px 49px 32px 34px;
+  }
+}
+
+.scheme__line-text {
+  font-size: 24px;
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+}
+
+.line-img-1 {
+  background-image: url(../img/ellipse-bg1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -34px;
+  @media (max-width: 600px) {
+    margin-left: -37px;
+  }
+}
+
+.line-text-1 {
+  max-width: 194px;
+}
+
+.line-text-2 {
+  margin-left: 34px;
+  max-width: 146px;
+  @media (max-width: 600px) {
+    margin-left: 0px;
+  }
+}
+
+.line-img-2 {
+  background-image: url(../img/ellipse-bg2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width: 600px) {
+    margin-left: -37px;
+  }
+}
+
+.line-item-3 {
+  margin-left: 124px;
+  @media (max-width: 800px) {
+    margin-left: 0px;
+  }
+}
+
+.line-text-3 {
+  margin-left: 34px;
+  max-width: 207px;
+  @media (max-width: 600px) {
+    margin-left: 0px;
+  }
+}
+
+.line-img-3 {
+  background-image: url(../img/ellipse-bg3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width: 600px) {
+    margin-left: -37px;
+  }
+}
+
+.line-item-4 {
+  margin-left: 36px;
+  @media (max-width: 800px) {
+    margin-left: 0px;
+  }
+}
+
+.line-text-4 {
+  margin-left: 34px;
+  max-width: 197px;
+  @media (max-width: 600px) {
+    margin-left: 0px;
+  }
+}
+
+.line-img-4 {
+  background-image: url(../img/ellipse-bg4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width: 600px) {
+    margin-left: -37px;
+  }
+}

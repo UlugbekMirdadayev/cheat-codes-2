@@ -1,0 +1,235 @@
+.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--dark-blue-6188, #b9badb);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.nav__logo {
+  @media (max-width: 800px) {
+    order: 0;
+  }
+}
+
+.logo {
+  width: 142.5px;
+  height: 24px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 880px) {
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/logo-mob.svg);
+  }
+}
+
+.navigation-list {
+  @media (max-width: 800px) {
+    order: 2;
+  }
+  ul {
+    display: flex;
+
+    @media (max-width: 800px) {
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: grid;
+      gap: 12px;
+      padding: 70px 0;
+      margin: 0;
+      background: #fff;
+      list-style-type: none;
+      transform: translateY(-100%);
+      transition: 0.3s;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-right: 42px;
+
+    @media (max-width: 800px) {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    &.active {
+      font-weight: 700;
+    }
+  }
+}
+
+.burger-checkbox {
+  display: none;
+
+  @media (max-width: 800px) {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+
+    &:checked + .burger::before {
+      top: 11px;
+      transform: rotate(45deg);
+      box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+      transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+    }
+
+    &:checked + .burger::after {
+      top: 11px;
+      left: 0;
+      width: 100%;
+      transform: rotate(-45deg);
+      transition: bottom 0.3s, transform 0.3s 0.15s;
+    }
+
+    &:checked ~ ul {
+      transform: translateX(0);
+    }
+  }
+}
+
+.burger {
+  @media (max-width: 800px) {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 24px;
+    height: 24px;
+    margin: 30px auto;
+    z-index: 6;
+    order: 3;
+
+    &::after,
+    &::before {
+      content: "";
+      left: 0;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 3px;
+      border-radius: 10px;
+      background: #b9badb;
+    }
+
+    &::before {
+      top: 0;
+      box-shadow: 0 11px 0 #b9badb;
+      transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+    }
+
+    &::after {
+      width: 70%;
+      bottom: 0;
+      left: 7px;
+      transition: bottom 0.3s 0.15s, transform 0.3s;
+    }
+  }
+}
+
+.nav__blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropbtn {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+  z-index: 5;
+
+  @media (max-width: 800px) {
+    z-index: -1;
+  }
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  width: 90px;
+}
+
+.dropbtn {
+  background: url("../img/icon-eng.svg") no-repeat left center;
+  padding-left: 35px;
+  width: 90px;
+}
+
+.dropbtn::after {
+  background: rgba(0, 0, 0, 0) url("../img/icon-down.svg") no-repeat scroll center center;
+  content: "";
+  height: 16px;
+  position: absolute;
+  right: -4px;
+  top: 8px;
+  width: 16px;
+}
+
+.dropdown-content a:first-child {
+  background: url("../img/icon-eng.svg") no-repeat left center;
+  padding-left: 35px;
+}
+
+.dropdown-content a:last-child {
+  background: url("../img/icon-eng.svg") no-repeat left center;
+  padding-left: 35px;
+}
+
+.dropdown-content a {
+  padding: 2px 0 2px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #c7ff6c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav__login {
+  margin-right: 28px;
+
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
+
+.nav__funded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+  background: var(--dark-blue-1513, #282a66);
+
+  a {
+    padding: 12px 20px;
+  }
+}

@@ -1,0 +1,207 @@
+.tariffs__row {
+  position: relative;
+}
+
+.tariffs__title {
+  background-image: url("../img/tariffs-bg.png");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 296px;
+  z-index: 1;
+}
+
+.tariffs__text {
+  padding-left: 152px;
+  padding-top: 50px;
+  color: #17f871;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.tariffs__popular {
+  margin-left: 824px;
+  margin-top: 28px;
+  color: #436bf7;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -45px;
+    width: 34px;
+    height: 36px;
+    background-image: url(../img/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.tariffs__table {
+  margin-left: 152px;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  z-index: 2;
+  top: -100px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -60px;
+    left: -152px;
+    width: 1440px;
+    height: 145px;
+    background-image: url(../img/tariffs-bottom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.table__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 133px;
+  padding-bottom: 77px;
+  width: 186px;
+
+  background-image: url(../img/table-list-bg.png);
+  background-repeat: no-repeat;
+  background-position: 81.5%;
+
+  ul {
+    margin-bottom: 26px;
+  }
+
+  li {
+    margin-bottom: 28px;
+    font-family: Anonymous Pro;
+    line-height: 1.5;
+    color: var(--dark-blue-6188, #b9badb);
+
+    &:nth-child(1) {
+      margin-bottom: 40px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    &:last-child {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fff;
+    }
+  }
+
+  &-text {
+    color: var(--dark-blue-1156, #5f62a0);
+    line-height: 1.5;
+  }
+}
+
+.table__cards {
+  display: flex;
+  align-items: stretch;
+}
+
+.table__card {
+  display: flex;
+  padding: 32px 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 24px;
+  width: 262px;
+
+  ul {
+    padding-top: 24px;
+  }
+
+  li {
+    padding-bottom: 28px;
+    font-family: Anonymous Pro;
+    line-height: 1.5;
+    text-align: center;
+
+    &:first-child,
+    &:nth-child(7),
+    &:last-child {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.22;
+    }
+
+    &:nth-child(7) {
+      opacity: 0.9;
+    }
+  }
+}
+
+.card-sale1 {
+  background-image: url(../img/card-sale1.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 162px;
+  height: 79px;
+}
+
+.card-sale2 {
+  background-image: url(../img/card-sale2.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 200.489px;
+  height: 97.769px;
+}
+
+.card-sale3 {
+  background-image: url(../img/card-sale3.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 178px;
+  height: 73px;
+}
+
+.table__item-none {
+  color: var(--brand-1719, #000b36);
+}
+
+.table__card-title {
+  font-family: Anonymous Pro;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+
+.table__card-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 193px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--dark-blue-1513, #282a66);
+
+  a {
+    color: var(--brand-0101, #fcfdff);
+    font-family: Anonymous Pro;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 12px 10px;
+  }
+}
+
+.card-link-premium {
+  background: var(--brand-1156, #0057fa);
+}
+
+.card-premium {
+  background: var(--dark-blue-16156, #1c1e4e);
+}

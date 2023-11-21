@@ -1,0 +1,95 @@
+.email__row {
+	display: flex;
+	flex-direction: column;
+	padding-left: 152px;
+	padding-top: 64px;
+	padding-bottom: 60px;
+	@media (max-width: 1200px) {
+		padding-left: 0;
+	}
+}
+
+.email__text {
+	display: flex;
+	flex-direction: column;
+	@media (max-width: 1200px) {
+		align-items: center;
+	}
+}
+
+.email__title {
+	color: #17F871;
+	font-size: 42px;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 16px;
+	@media (max-width: 460px) {
+		font-size: 32px;
+	}
+}
+
+.email__subtitle {
+   font-family: Anonymous Pro;
+   font-size: 32px;
+	max-width: 747px;
+	@media (max-width: 460px) {
+		font-size: 18px;
+	}
+}
+
+.email__item {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+
+	@media (max-width: 1200px) {
+		flex-direction: column;
+	}
+
+	label {
+		font-family: Anonymous Pro;
+      font-size: 32px;
+		@media (max-width: 460px) {
+			display: none;
+		}
+	}
+
+	input {
+		margin-left: 56px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 370px;
+		background: none;
+		border-bottom: 2px solid #17F871;
+		color: #fff;
+		@media (max-width: 1200px) {
+			margin-top: 20px;
+		}
+		@media (max-width: 460px) {
+			margin-left: 0px;
+			width: 238px;
+		}
+	}
+
+	&-btn {
+		width: 200px;
+      height: 48px;
+		margin-left: 56px;
+		display: flex;
+		align-items: center;
+		padding: 12px 20px;
+		border-radius: 12px;
+      background: var(--brand-1156, #0057FA);
+		font-family: Anonymous Pro;
+		line-height: 1.5;
+		color: var(--brand-0101, #FCFDFF);
+		@media (max-width: 1200px) {
+			margin-top: 20px;
+		}
+		@media (max-width: 460px) {
+			margin-left: 0px;
+			width: 284px;
+			justify-content: center;
+		}
+	}
+}
