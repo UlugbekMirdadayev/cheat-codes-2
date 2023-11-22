@@ -1671,5 +1671,53 @@ footer .row a.mail {
     font-size: 18px;
     padding: 12px;
     margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .community {
+    background-image: none;
+  }
+  .community.about .title {
+    color: #17f871;
+    padding: 0px 16px;
+    margin-bottom: 32px;
+  }
+  .community .row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .community .row .card {
+    width: 100%;
+    height: max-content;
+    padding: 16px;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  footer {
+    margin: 40px 0px;
+    margin-bottom: 0px;
+  }
+  footer .container {
+    border-top-style: solid;
+    max-width: calc(100dvw - 32px);
+    padding: 0px;
+  }
+  footer .container .body-context .title,
+  footer .container .body-context a:not(.mail),
+  footer .container .body-context p {
+    color: #e3e3f1;
+  }
+  footer .row .space,
+  footer .row {
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: underline;
+    gap: 14px;
+  }
+  footer .row .between {
+    margin-top: 20px;
+    gap: 32px;
+  }
+  footer .row .between img {
+    filter: brightness(1.5);
   }
 }
