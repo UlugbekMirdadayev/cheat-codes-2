@@ -1,33 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".slide");
-  const slidesCount = slides.length;
-  let currentSlide = 0;
-
-  function showSlides() {
-    slides.forEach((slide) => {
-      slide.style.display = "none";
-    });
-
-    for (let i = currentSlide; i < currentSlide + 3; i++) {
-      const index = i % slidesCount;
-      slides[index].style.display = "block";
-    }
-  }
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slidesCount;
-    showSlides();
-  }
-
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + slidesCount) % slidesCount;
-    showSlides();
-  }
-
-  document.querySelector(".nextBtn").addEventListener("click", nextSlide);
-  document.querySelector(".prevBtn").addEventListener("click", prevSlide);
-
-  showSlides();
-
   !(function () {
     var e = document.querySelector(".cookie-bar");
     if (!e) return !1;
@@ -59,4 +30,30 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     });
+  var swiper = new Swiper(".tarif_row", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    debugger: true,
+  });
+  var swiper2 = new Swiper(".trade_slide", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    breakpoints: {
+      600: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    },
+    debugger: true,
+    navigation: {
+      prevEl: ".btn-prev",
+      nextEl: ".btn-next",
+    },
+    loop: true,
+  });
+  var swiper3 = new Swiper(".tarif_row_mobile", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    debugger: true,
+  });
 });
