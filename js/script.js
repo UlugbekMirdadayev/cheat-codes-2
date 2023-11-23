@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 24,
     breakpoints: {
-      600: {
+      1200: {
         slidesPerView: 3,
         spaceBetween: 24,
       },
@@ -53,7 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   var swiper3 = new Swiper(".tarif_row_mobile", {
     slidesPerView: "auto",
-    spaceBetween: 16,
+    spaceBetween: 12,
     debugger: true,
   });
+  const modal = document.getElementById("modal-form");
+  const form = document.getElementById("email-form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    modal.style.display = "flex";
+    document.getElementById("reset").click();
+  });
+  const modal_removers = document.querySelectorAll(".modal-remover");
+  modal_removers.forEach((elem) =>
+    elem.addEventListener("click", () => (modal.style.display = "none"))
+  );
 });
