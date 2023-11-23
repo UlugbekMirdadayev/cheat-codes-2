@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   var swiper = new Swiper(".tarif_row", {
     slidesPerView: "auto",
-    spaceBetween: 16,
+    spaceBetween: 0,
     debugger: true,
   });
   var swiper2 = new Swiper(".trade_slide", {

@@ -894,7 +894,7 @@ body {
 }
 
 .cards .container {
-  border-width: 0px 4px 0px 4px;
+  border-width: 0px 2px 0px 2px;
   border-style: dashed;
   border-color: #0100fe;
   padding: 0 108px;
@@ -903,10 +903,12 @@ body {
   gap: 24px;
   max-width: 1122px;
 }
-
+.mx-md {
+  max-width: 1122px;
+}
 .cards .card-sale {
   background: #0100fe;
-  padding: 24px 32px;
+  padding: 24px;
   font-family: Pixelify Sans;
   color: #17f871;
   position: relative;
@@ -983,6 +985,10 @@ body {
 .email {
   background-image: url(../img/email.png);
   background-position: right top;
+}
+.mini-container {
+  max-width: 1260px;
+  margin-left: auto;
 }
 .about .title {
   color: #17f871;
@@ -1066,13 +1072,30 @@ body {
   padding: 90px 0px;
   font-family: IBM Plex Mono;
 }
-
+.tariffs .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.tariffs .container .swiper {
+  max-width: 1261px;
+  margin-right: 0;
+}
+@media (max-width: 1300px) {
+  .tariffs .container .swiper {
+    max-width: 1122px;
+  }
+}
 .tariffs .title {
   color: #0100fe;
   font-family: Pixelify Sans;
   font-size: 42px;
   font-weight: 500;
   line-height: 120%;
+  max-width: 1261px;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .list_items {
@@ -1235,7 +1258,7 @@ body {
   font-weight: 600;
   background: #17f871;
   font-family: IBM Plex Mono;
-  border:2px solid #17f871;
+  border: 2px solid #17f871;
   transition: 300ms ease;
 }
 .trade {
@@ -1254,7 +1277,10 @@ body {
 .mb-60 {
   margin-bottom: 60px;
 }
-
+.trade .title.mb-60 {
+  max-width: 1260px;
+  margin-left: auto;
+}
 .trade_slide .swiper-slide {
   border: 2px dashed #0100fe;
   height: 260px;
@@ -1290,27 +1316,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 1261px;
+  margin-left: auto;
 }
 .trade .row .swiper-wrapper {
   max-width: 1440px;
 }
 .trade .row button {
-  width: 56px;
-  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
   background: #17f871;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .trade .row button.btn-next {
   rotate: 180deg;
+  left: 24px;
 }
-
+.trade .row button.btn-prev {
+  right: 24px;
+}
 .community {
   background-image: url(../img/community.png);
+  background-position-y: 45px;
 }
 
 .community .row {
@@ -1318,8 +1349,13 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  max-width: 1261px;
+  margin-left: auto;
 }
-
+.community.about .title {
+  max-width: 1261px;
+  margin-left: auto;
+}
 .community .row .card {
   border: 2px dashed #fff;
   display: flex;
@@ -1355,11 +1391,11 @@ footer {
   margin: 40px 0px;
 }
 
-footer .container {
-  border-top: 2px dashed #e3e3f1;
-}
 footer .container .body-context {
   padding: 40px 24px;
+  max-width: 1260px;
+  margin-left: auto;
+  border-top: 2px dashed #e3e3f1;
 }
 footer .container .body-context .title {
   color: #cfcfd1;
@@ -1467,6 +1503,9 @@ body:has(.modal-form[style*="flex"]) {
   font-weight: 600;
 }
 @media screen and (max-width: 1200px) {
+  .tariffs .container .swiper {
+    max-width: 100%;
+  }
   .cards .container {
     padding: 0px 26px;
     grid-template-columns: repeat(1, 1fr);
@@ -1646,9 +1685,7 @@ body:has(.modal-form[style*="flex"]) {
   }
   .tarif_row_mobile .options {
     margin-top: 24px;
-    opacity: 0;
-    pointer-events: none;
-    transition: 300ms ease;
+    transition: 500ms ease;
     display: none;
     width: calc(100dvw - 64px);
   }
@@ -1661,8 +1698,6 @@ body:has(.modal-form[style*="flex"]) {
     .options:nth-child(4),
   .tarif_row_mobile:has(.swiper-slide-active:nth-child(4))
     .options:nth-child(5) {
-    opacity: 1;
-    pointer-events: all;
     display: block;
   }
   .tarif_row_mobile .options h3 {
@@ -1767,8 +1802,6 @@ body:has(.modal-form[style*="flex"]) {
   }
   .trade_slide .swiper-slide {
     padding: 25px;
-    min-height: 260px;
-    height: max-content;
   }
   .trade .title {
     word-wrap: break-word;
@@ -1802,10 +1835,9 @@ body:has(.modal-form[style*="flex"]) {
     margin: 40px 0px;
     margin-bottom: 0px;
   }
-  footer .container {
+  footer .container .body-context {
     border-top-style: solid;
-    max-width: calc(100dvw - 32px);
-    padding: 0px;
+    max-width: calc(100dvw -32px);
   }
   footer .container .body-context .title,
   footer .container .body-context a:not(.mail),
