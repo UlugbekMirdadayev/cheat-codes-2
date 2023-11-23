@@ -904,7 +904,7 @@ body {
   max-width: 1122px;
 }
 .mx-md {
-  max-width: 1122px;
+  max-width: 1156px;
 }
 .cards .card-sale {
   background: #0100fe;
@@ -1084,7 +1084,7 @@ body {
 }
 @media (max-width: 1300px) {
   .tariffs .container .swiper {
-    max-width: 1122px;
+    max-width: 1156px;
   }
 }
 .tariffs .title {
@@ -1691,13 +1691,13 @@ body:has(.modal-form[style*="flex"]) {
   }
 
   .tarif_row_mobile:has(.swiper-slide-active:nth-child(1))
-    .options:nth-child(2),
-  .tarif_row_mobile:has(.swiper-slide-active:nth-child(2))
     .options:nth-child(3),
-  .tarif_row_mobile:has(.swiper-slide-active:nth-child(3))
+  .tarif_row_mobile:has(.swiper-slide-active:nth-child(2))
     .options:nth-child(4),
+  .tarif_row_mobile:has(.swiper-slide-active:nth-child(3))
+    .options:nth-child(5),
   .tarif_row_mobile:has(.swiper-slide-active:nth-child(4))
-    .options:nth-child(5) {
+    .options:nth-child(6) {
     display: block;
   }
   .tarif_row_mobile .options h3 {
