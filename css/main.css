@@ -1283,7 +1283,6 @@ body {
 }
 .trade_slide .swiper-slide {
   border: 2px dashed #0100fe;
-  height: 260px;
   padding: 32px;
 }
 .trade_slide .swiper-slide p {
@@ -1346,7 +1345,6 @@ body {
 
 .community .row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 40px;
   max-width: 1261px;
@@ -1360,7 +1358,6 @@ body {
   border: 2px dashed #fff;
   display: flex;
   width: 33%;
-  height: 396px;
   padding: 32px;
   flex-direction: column;
   gap: 24px;
@@ -1826,7 +1823,6 @@ body:has(.modal-form[style*="flex"]) {
   }
   .community .row .card {
     width: 100%;
-    height: max-content;
     padding: 16px;
     margin-top: 0;
     margin-bottom: 0px;
