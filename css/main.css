@@ -1317,7 +1317,7 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 1261px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .trade .row .swiper-wrapper {
   max-width: 1440px;
