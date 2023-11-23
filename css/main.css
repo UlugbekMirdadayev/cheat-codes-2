@@ -631,6 +631,8 @@ body {
   font-size: 32px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: 300ms ease;
+  border: 2px solid #17f871;
 }
 @media (max-width: 800px) {
   .intro-top__link {
@@ -899,6 +901,7 @@ body {
   display: grid;
   grid-template-columns: calc(60% - 12px) calc(40% - 12px);
   gap: 24px;
+  max-width: 1122px;
 }
 
 .cards .card-sale {
@@ -1186,6 +1189,8 @@ body {
   background: #17f871;
   border: 2px solid #17f871;
 }
+.email form button:hover,
+.intro-top__link a:hover,
 .trade .btn-link:hover,
 .tr_card a:hover {
   background: #09c454;
@@ -1230,6 +1235,8 @@ body {
   font-weight: 600;
   background: #17f871;
   font-family: IBM Plex Mono;
+  border:2px solid #17f871;
+  transition: 300ms ease;
 }
 .trade {
   padding: 88px 0px;
