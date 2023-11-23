@@ -1186,6 +1186,7 @@ body {
   background: #17f871;
   border: 2px solid #17f871;
 }
+.trade .btn-link:hover,
 .tr_card a:hover {
   background: #09c454;
   border: 2px solid #09c454;
@@ -1275,6 +1276,8 @@ body {
   align-items: center;
   background: #17f871;
   width: max-content;
+  transition: 300ms ease;
+  border: 2px solid #17f871;
 }
 .trade .row {
   display: flex;
@@ -1826,7 +1829,7 @@ body:has(.modal-form[style*="flex"]) {
     position: static;
     margin-left: auto;
   }
-  .modal-body #modal-remover{ 
+  .modal-body #modal-remover {
     width: 100%;
     padding: 12px 20px;
     font-size: 16px;
