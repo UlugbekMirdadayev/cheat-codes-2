@@ -298,7 +298,12 @@ body {
   background-size: 25px 25px;
   background-position: center left;
 }
-
+.lt-lang .dropbtn {
+  background-image: url(../img/it.svg);
+}
+.spa-lang .dropbtn {
+  background-image: url(../img/esp.svg);
+}
 .dropbtn-sp {
   background: url(../img/esp.svg) no-repeat left center;
   padding-left: 35px;
@@ -1191,7 +1196,7 @@ body {
   color: #fff;
 }
 .popular::after {
-  content: "Most popular";
+  content: attr(data-after-text);
   position: absolute;
   top: -63px;
   right: 0;
@@ -1283,7 +1288,8 @@ body {
 }
 .trade_slide .swiper-slide {
   border: 2px dashed #0100fe;
-  padding: 32px;
+  padding: 32px 11px 22px 32px;
+  min-height: 270px;
 }
 .trade_slide .swiper-slide p {
   color: #0100fe;
@@ -1798,7 +1804,8 @@ body:has(.modal-form[style*="flex"]) {
     width: 100%;
   }
   .trade_slide .swiper-slide {
-    padding: 25px;
+    padding: 32px 24px 32px 32px;
+    min-height: 450px;
   }
   .trade .title {
     word-wrap: break-word;
