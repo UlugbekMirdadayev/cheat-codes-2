@@ -1017,7 +1017,7 @@ body {
 }
 .line-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
@@ -1189,6 +1189,7 @@ body {
   font-weight: 600;
   line-height: 24px;
   transition: 300ms ease;
+  margin: 0 16px;
 }
 .popular {
   position: relative;
@@ -1245,7 +1246,7 @@ body {
 .email form label input {
   background: none;
   flex: 1;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 2px dashed #fff;
   color: #fff;
   font-size: 32px;
   margin: 0px 26px;
@@ -1265,6 +1266,7 @@ body {
   font-family: IBM Plex Mono;
   border: 2px solid #17f871;
   transition: 300ms ease;
+  line-height: 1;
 }
 .trade {
   padding: 88px 0px;
